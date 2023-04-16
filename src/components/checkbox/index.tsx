@@ -1,4 +1,4 @@
-import { ComponentProps, FC, useId } from 'react';
+import { ComponentProps, FC, useId, } from 'react';
 import { CheckboxInput } from './input-checkbox';
 import { Label } from '../label';
 
