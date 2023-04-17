@@ -4,7 +4,7 @@ import useSWR from 'swr';
 import {PizzaSchema, ExtraIngredientsSchema} from './types';
 import PizzaShop from './pizza-shop';
 
-const server = 'http://localhost:3000';
+const server = process.env.baseUrl ?? 'http://localhost:3000';
 
 const PizzaShopDataLoader: FC = () => {
     const { data: pizzas, error: pizzaErr } = useSWR<PizzaSchema[]>(`/api/pizzas`, async(resource, init): Promise<PizzaSchema[]> => {

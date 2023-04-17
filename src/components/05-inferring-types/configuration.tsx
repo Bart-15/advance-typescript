@@ -34,16 +34,16 @@ const Configuration = () => {
             <h2 className="text-2xl font-bold">Configuration</h2>
             <div className="my-4">
                 <form>
-                    <LabeledInput id="firstName" className="my-2"value={firstName} type="text" readOnly>
+                    <LabeledInput id="firstName" value={firstName} type="text" readOnly>
                         <span>FirstName</span>
                     </LabeledInput>
-                    <LabeledInput id="lastName" className="my-2"value={lastName} type="text" readOnly>
+                    <LabeledInput id="lastName" value={lastName} type="text" readOnly>
                         <span>LastName</span>
                     </LabeledInput>
-                    <LabeledInput id="birthDate" className="my-2" value={birthDate} type="text" readOnly>
+                    <LabeledInput id="birthDate" value={birthDate} type="text" readOnly>
                         <span>BirthDate</span>
                     </LabeledInput>
-                    <LabeledInput id="address" className="my-2" value={fullAdd} type="text" readOnly>
+                    <LabeledInput id="address" value={fullAdd} type="text" readOnly>
                         <span>Address</span>
                     </LabeledInput>
                 </form>
